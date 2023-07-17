@@ -64,6 +64,6 @@ export const GetPage = async(req,res)=>{
 export const LogOut = (req,res)=>{
     const token = "";
     res.cookie("access_token",token,{httpOnly: true})
-     res.render('base/home')
+     res.redirect('/')
     //res.send('done')
 }

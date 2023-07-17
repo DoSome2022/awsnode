@@ -6,7 +6,7 @@ import session from 'express-session';
 import passportConfig from './congfig/passport.js';
 import cookieParser from "cookie-parser";
 
-const port = 3001 || process.env.PORT;
+const port = 3000 || process.env.PORT;
 
 const app = express();
 dotenv.config();
