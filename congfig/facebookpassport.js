@@ -1,9 +1,9 @@
 import { Strategy as FacebookStrategy } from 'passport-facebook';
 import passport from "passport"; 
 
-const F_Client_ID ='1300710187161347'
-const F_Client_Secret ='2c8eae46757055ad50d96087270085fc'
-const FaceBook_Oauth_RedirectUrl ='http://localhost:3000/facebook/auth/facebook/callback'
+const F_Client_ID =process.env.F_Client_ID
+const F_Client_Secret =process.env.F_Client_Secret
+const FaceBook_Oauth_RedirectUrl =process.env.FaceBook_Oauth_RedirectUrl
 
 
 //-------------------------passport_Facebook_login---------------------------------------

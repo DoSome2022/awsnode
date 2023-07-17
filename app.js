@@ -6,6 +6,7 @@ import session from 'express-session';
 import passportConfig from './congfig/passport.js';
 import cookieParser from "cookie-parser";
 
+const port = 3001 || process.env.PORT;
 
 const app = express();
 dotenv.config();
@@ -38,7 +39,7 @@ app.use(passport.session())
 
 
 // 路徑
-import  SendmailRoutes from "./routes/sendmail.js";
+import SendmailRoutes from "./routes/sendmail.js";
 import AuthRoutes from "./routes/auth.js";
 import passport from "passport";
 import BaseRoutes from './routes/Base.js';
@@ -63,7 +64,7 @@ app.use('/jwt',jwtRoutes)
 // })
 
 //run server port
-app.listen(3000,()=>{ //listen 係指 等待用家輸入的指令
+app.listen(port,()=>{ //listen 係指 等待用家輸入的指令
     connect() // 去搵返呢個function
     console.log('server is running 3000')
 });
