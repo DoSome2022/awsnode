@@ -1,5 +1,7 @@
 import passport from "passport"; 
 import { Strategy as GoogleStrategy } from 'passport-google-oauth2';
+import dotenv from "dotenv";
+dotenv.config()
 
 const G_Client_ID =process.env.G_Client_ID
 const G_Client_Secret =process.env.G_Client_Secret

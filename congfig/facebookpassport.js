@@ -1,5 +1,7 @@
 import { Strategy as FacebookStrategy } from 'passport-facebook';
 import passport from "passport"; 
+import dotenv from "dotenv";
+dotenv.config()
 
 const F_Client_ID =process.env.F_Client_ID
 const F_Client_Secret =process.env.F_Client_Secret
